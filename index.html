@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--metadados para SEO e compatibilidade-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recursos em HTML5">
+    <meta name="author" content="Marcinho/Enzo">
+    <title>Página sobre Recursos em HTML5</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <!--Cabeçalho de página-->
+    <header>
+        <h1>Explorando recursos em HTML5</h1>
+
+        <!--Navegando com links âncora para diferentes seçoes-->
+        <nav>
+            <a href="#paragrafo">Parágrafo</a>
+            <a href="#listas">Listas</a>
+            <a href="#tabela">Tabela</a>
+            <a href="#formulario">Formulário</a>
+            <a href="#midia">Mídia</a>
+        </nav>
+    </header>
+
+    <!--Primeira seção: Demonstrar parágrafos e formatação de texto-->
+    <section id="paragrafo">
+        <h2>Parágrafos e Formatação de Texto</h2>
+        <!--um parágrafo simples-->
+        <p>Este é um parágrafo básico. O elemento <code>&lt;p&gt;</code> é usado para criar parágrafos em HTML</p>
+
+        <!-- Texto em Negrito e Itálico-->
+        <p><strong>Texto em Negrito</strong> pode ser criado com o elemento <code>&lt;stroing&gt;</code> ou
+            <code>&lt;b&gt;</code>.
+        </p>
+        <p><em>Texto em Itálico</em> pode ser criado o elemento <code>&lt;em&gt;</code> ou <code>&lt;i&gt;</code>.</p>
+
+        <!--Linha Horizontal-->
+        <hr>
+        <p>Esta linha horizontal foi criado com o elemento <code>&lt;hr&gt;</code>, que é usado para separar seções de
+            conteúdo.</p>
+    </section>
+
+    <!--Segunda seção> Listas ordenadas e listas não ordenadas-->
+    <section id="listas" <h2>Listas</h2>
+        <!--Lista não ordenada-->
+        <h3>Lista Não Ordenada</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <p>A lista acima é uma<strong>lista não ordenada</strong>, criado com <code>&lt;ul&gt;</code> e
+            <code>&lt;li&gt;</code>.
+        </p>
+
+        <!-- lista ordenada-->
+        <h3>Lista Ordenada</h3>
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <p>A lista acima é uma<strong>lista ordenada</strong>, criado com <code>&lt;ol&gt;</code> e
+            <code>&lt;li&gt;</code>.
+        </p>
+    </section>
+
+    <!--Terceira seção: Tabela básica-->
+    <section id="tabela"></section>
+    <h2>Tabela</h2>
+    <table border="1">
+        <caption>Exemplo de tabela</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marcinho</td>
+                <td>23</td>
+                <td>Uber</td>
+            </tr>
+            <tr>
+                <td>Enzo</td>
+                <td>18</td>
+                <td>OfficeBoy</td>
+            </tr>
+            <tr>
+                <td>Yuri Alberto</td>
+                <td>28</td>
+                <td>Bagre</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Esta tabela é criada com o elemento <code>&lt;table&gt;</code>. Os cabeçalhos são definidos com
+        ><code>&lt;</code></p>
+    </section>
+
+    <!--Quarta seção: Formulário-->
+    <section id="formulario" :>
+        <h2>Formulário</h2>
+        <form action="#" method="post">
+            <!--Campo de texto-->
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <!--Campo de E-Mail-->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <!--Caixa de seleção (checkbox)-->
+            <label for="email">Aceite os termos</label>
+            <input type="checkbox" id="aceito" name="aceito"><br><br>
+
+            <!--Botão de envio-->
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Este formulário contém diferentes tipos de entradas de dados, como <code>&lt;input&gt;</code> e
+            <code>&lt;label&gt;</code>
+        </p>
+    </section>
+
+    <!-- Quinta seção: Mídias (Imagens e Vídeos)-->
+    <section id="midia">
+        <h2>Mídia</h2>
+        <div class="container">
+            <video src="https://videos.pexels.com/video-files/4631599/4631599-hd_1080_1920_30fps.mp4" controls></video>
+            <img src="https://images.pexels.com/photos/27757764/pexels-photo-27757764/free-photo-of-neve-alvorecer-amanhecer-aurora.jpeg" alt="Minha Imagem">
+            <p>Esta Imagem é inserida com o elemento <code>&lt;img&gt;</code> que requer o atributo <code>src</code> para o
+                caminho da imagem e <code>alt</code> para a descrição alternativa</p>  
+        </div>
+    </section>
+    
+    <!--Rodapé da Página-->
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Marcinho e Enzo</p>
+    </footer>
+</body>
+
+</html>
